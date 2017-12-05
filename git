@@ -1,0 +1,21 @@
+cd xampp\htdocs\phps_setup
+git init
+status
+add .
+commit
+remote add vidhisha https://github.com/vidhisha375/project_movie.git
+remote -v
+remote add origin https://github.com/vidhisha375/project_movie.git
+push origin
+add actor.php
+resst HEAD actor.php
+diff actor.php                                             //shows difference
+log
+branch day1
+branch
+branch -D day1
+branch day2
+checkout day2
+branch -m day2                                            //changes current dir name to day2
+push origin day1
+branch -a

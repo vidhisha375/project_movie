@@ -24,7 +24,7 @@ try {
     echo "<br>Record Inserted";
 }
     $var="select * from actor";
-    echo $var;
+   /* echo $var;*/
     $result = $conn->query($var);
     if ($result ->num_rows() > 0) {
     while($row = $result->fetch_assoc()) {

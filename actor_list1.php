@@ -27,12 +27,31 @@ $(document).ready(function() {
 $("#actor1").on('change', function () {
     alert($(this).val());
     $actor_1=$(this).val();
+ 
+        $.ajax({
+            url: 'query.php',
+            type: "POST",
+            data: {x : $actor_1},
+            success: function(){
+                alert($actor_1);
+                    }
+        });
+
+
 });
 
 
 $("#actor2").on('change', function () {
     alert($(this).val());
     $actor_2=$(this).val();
+     $.ajax({
+            url: 'query.php',
+            type: "POST",
+            data: {y : $actor_2},
+            success: function(){
+                alert($actor_2);
+                    }
+        });
 }); 
 });
 

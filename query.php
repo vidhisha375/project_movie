@@ -1,22 +1,13 @@
 <?php
 include 'db_connect.php';
 
-$actor_1 = isset($_POST['actor_1'])? $_POST['actor_1'] : NULL;
-$actor_2 = isset($_POST['actor_2'])? $_POST['actor_2'] : NULL;
 
-  $bac=  "INSERT INTO `a_table` (`actor_1`, `actor_1`) VALUES ('$actor_1', '$actor_2');";
-  echo $bac;
-  $var="select * from a_table";
-echo $var;
-
-$result = $DB_con->query($var);
-
-        while($row = $result->fetch()) {
-         $actor_1 = $row["actor_1"];
-         $actor_2 = $row["actor_2"];}
-
-         print_r($actor_1);
-         print_r($actor_2);
+if($_SERVER['REQUEST_METHOD']){
+    $x = $_POST['x'];
+    echo $value1;
+    $y = $_POST['y'];
+    echo $value2;
+}
 
 /*$row1 = $DB_con->query('select id.m_id from movie inner join id on id.a_id= movie.m_id where id.a_id= " . echo $a . "')->fetchAll(PDO::FETCH_ASSOC);
 $row2 = $DB_con->query('select id.m_id from movie inner join id on id.a_id= movie.m_id where id.a_id= " . echo $b . "')->fetchAll(PDO::FETCH_ASSOC);
