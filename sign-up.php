@@ -24,8 +24,8 @@ if(isset($_POST['btn-signup']))
    else if($upass=="") {
       $error[] = "provide password !";
    }
-   else if(strlen($upass) < 1){
-      $error[] = "Password must be atleast 1 characters"; 
+   else if(strlen($upass) < 6){
+      $error[] = "Password must be atleast 6 characters"; 
    }
    else
    {
@@ -63,7 +63,7 @@ if(isset($_POST['btn-signup']))
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Sign up : register</title>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"  />
-<link rel="stylesheet" href="style.css" type="text/css"  />
+<link rel="stylesheet" href="css/style.css" type="text/css"  />
 </head>
 <body>
 <div class="container">

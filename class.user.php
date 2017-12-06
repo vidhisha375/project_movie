@@ -51,27 +51,8 @@ class USER
                 return true;
              
           }
-           
-           
-          // $sql=$this->db->prepare("SELECT * FROM roles WHERE r_id=:r_id");
-          // $sql->execute(array(':r_id'=> $role_id));
-          // $row=$sql->fetch(PDO::FETCH_ASSOC);
-          // echo $row['role'] . "\n";
-          
-          // echo $_SESSION['role'] . "\n";
-
-         /* if($sql->rowCount() == 1)
-          {
-                if ($row['role']=="admin")
-                { header ("location: actor_table.php"); }
-                
-                else if ($row['role']=="user")
-                { $_SESSION['role']=$row['role'];
-                        header ("location: home.php"); }
-          }
-          else 
-          {$error="Your Login Name or Password is invalid";}*/
-       }}
+        }
+       }
        catch(PDOException $e)
        {
            echo $e->getMessage();

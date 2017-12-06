@@ -5,7 +5,7 @@
 
 session_start();
 
- echo "welllcm";
+ echo "welcome";
 
 // If session variable is not set it will redirect to login page
 

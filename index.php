@@ -1,36 +1,32 @@
 <?php
-require_once 'db_connect.php';
+  require_once 'db_connect.php';
 
-if($user->is_loggedin()!="")
-{
- $user->redirect('home.php');
-}
+  if($user->is_loggedin()!=""){
+   $user->redirect('home.php');
+  }
 
-if(isset($_POST['btn-login']))
-{
- $uname = $_POST['txt_uname_email'];
- $umail = $_POST['txt_uname_email'];
- $upass = $_POST['txt_password'];
-  
- if($user->login($uname,$umail,$upass))
- {
-  $user->redirect('home.php');
- }
- else
- {
-  $error = "Wrong Details !";
- } 
-}
+  if(isset($_POST['btn-login'])){
+   $uname = $_POST['txt_uname_email'];
+   $umail = $_POST['txt_uname_email'];
+   $upass = $_POST['txt_password'];
+    
+   if($user->login($uname,$umail,$upass)){
+    $user->redirect('home.php');
+   }
+   else{
+    $error = "Wrong Details !";
+   } 
+  }
 ?>
 
-<html">
-<head>
-<title>Login Page</title>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"  />
-<link rel="stylesheet" href="style.css" type="text/css"  />
-</head>
-<body>
-<div class="container">
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"  />
+    <link rel="stylesheet" href="css/style.css" type="text/css"  />
+  </head>
+  <body>
+    <div class="container">
      <div class="form-container">
         <form method="post">
             <h2>Sign in.</h2><hr />
@@ -60,6 +56,6 @@ if(isset($_POST['btn-login']))
             <label>Don't have account yet ! <a href="sign-up.php">Sign Up</a></label>
         </form>
        </div>
-</div>
-</body>
+    </div>
+  </body>
 </html>

@@ -19,11 +19,9 @@ $conn = null;
 
 <html>
 <head>
-<title>category</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <link rel="stylesheet" type="text/css" href="css/category.css">
-
-
+	<title>category</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/category.css">
 </head>
 <body id="main">
 	<div class="header1">
@@ -42,4 +40,6 @@ $conn = null;
 	</div>
 </body>
 </html>
+
+
 

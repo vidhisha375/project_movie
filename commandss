@@ -20,3 +20,10 @@ branch -m day2                                            //changes current dir 
 push origin day1
 branch -a
 :wq
+commit
+push origin remote
+
+
+
+index 
+sign-up

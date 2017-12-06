@@ -1,0 +1,28 @@
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+#box-1{
+border: 3px solid black;
+border-color: black;
+height:30px;
+width:200px;
+display: inline-block;
+}
+#lab{
+ height:30px;
+width:215px;
+display: inline-block;   
+}
